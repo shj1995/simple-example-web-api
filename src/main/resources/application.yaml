@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://example:example@47.106.125.155:27017/simple-example
+      uri: mongodb://admin:admine@118.25.157.226:27017/simple-example
 jwt:
   expiration: 7500000
   token: Authorization
