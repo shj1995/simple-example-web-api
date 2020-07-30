@@ -1,20 +1,20 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
   jpa:
-  database-platform: org.hibernate.dialect.MySQL8Dialect
-  hibernate:
-    ddl-auto: update
-    naming:
-      physical-strategy: com.shj.pms.pmspassport.config.CustomSpringPhysicalNamingStrategy
-  properties:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      format_sql: true
-      show_sql: true
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
   datasource:
-    url: jdbc:mysql://118.25.157.226:3306/pms-dev?autoreconnect=true&useSSL=false
+    url: jdbc:mysql://118.25.157.226:3306/simple_example_web?autoreconnect=true&useSSL=false
     username: "root"
     password: "123456"
     druid:
-      url: jdbc:mysql://118.25.157.226:3306/pms-dev?autoreconnect=true&useSSL=false
+      url: jdbc:mysql://118.25.157.226:3306/simple_example_web?autoreconnect=true&useSSL=false
       username: "root"
       password: "123456"
       driver-class-name:  com.mysql.cj.jdbc.Driver
