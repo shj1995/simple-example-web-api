@@ -4,7 +4,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
@@ -26,3 +26,11 @@ spring:
 jwt:
   expiration: 7500000
   token: Authorization
+simple:
+  storage:
+    local:
+      dir-path: /data/work/storage/simple/local
+    root: /data/work/storage/simple
+    temp: /data/work/storage/simple/temp
+    permanent: /data/work/storage/simple/local
+
