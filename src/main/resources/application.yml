@@ -24,7 +24,7 @@ spring:
       filters: stat,slf4j
 
 jwt:
-  expiration: 7500000
+  expiration: 7500000000
   token: Authorization
 simple:
   storage:
