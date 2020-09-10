@@ -22,6 +22,10 @@ spring:
       max-active: 5
       min-idle: 5
       filters: stat,slf4j
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
 
 jwt:
   expiration: 7500000000
